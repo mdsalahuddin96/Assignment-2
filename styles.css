@@ -10,6 +10,7 @@
 }
 :root{
     --bg-color:rgba(26, 11, 46, 1);
+    --bg-color2:#230E3D;
     --green-color:#00FF88;
 }
 /* shared style */
@@ -26,7 +27,7 @@
 .text{
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
 }
 .primary-btn{
     padding: 0.75rem 1rem;
@@ -130,7 +131,6 @@
 }
 .subscribe{
     padding: 0.75rem 1rem;
-    /* background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)); */
     font-size: 1rem;
     font-weight: 600;
     color:var(--green-color);
@@ -138,4 +138,39 @@
     border-radius: 10000px;
     background-color: transparent;
     margin-left: 0.5rem;
+}
+
+/* About section sytles */
+.about-section{
+    /* border: 2px solid yellow; */
+    background-color: #1A0B2E;
+    padding:3.125rem 0 7.5rem;
+}
+.about-text-content{
+    max-width: 75rem;
+    margin: 0 auto 5rem;
+    text-align: center;
+    color: #fff;
+}
+.about-text-content p{
+    margin-top: 1rem;
+}
+hr{
+    max-width: 75rem;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 1);
+    opacity: 0.1;
+}
+.about-card-container{
+    max-width: 75rem;
+    /* border: 1px solid white; */
+    margin: 5rem auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-card-container .card h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--green-color);
+    margin-bottom: 1rem;
 }
