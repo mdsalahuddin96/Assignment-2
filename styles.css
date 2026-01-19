@@ -195,13 +195,13 @@ hr{
 .choose-card-container{
     border: 1px solid white;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap:15px;
-    align-items: center;
+    grid-template-areas: "audio mobile mobile"
+                        "audio community community"
+                        "interview interview resource";
+    grid-gap:30px;
 }
 .choose-card{
-    padding: 40px;
+    padding: 2.5rem;
     border-radius: 40px;
     background: rgba(53, 17, 101, 0.4);
     color:#ffffff
@@ -213,23 +213,22 @@ hr{
 }
 
 #audio{
-    grid-row: span 2;
-    /* border: 2px solid red; */
+    grid-area: audio;
+    display: flex;
+    align-items: center;
 }
-#audio img{
-    margin-top: 6rem;
-}
-#audio p{
-    margin-bottom: 6rem;
-}
+
 #mobile{
-    grid-column: span 2;
+    grid-area: mobile;
 }
 #community{
-    grid-column: span 2;
+    grid-area: community;
 }
 #interview{
-    grid-column: span 2;
+    grid-area: interview;
+}
+#resource{
+    grid-area: resource;
 }
 /* Responsive for small device */
 @media screen and (max-width:576px) {
