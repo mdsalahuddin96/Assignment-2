@@ -245,11 +245,11 @@ hr{
 }
 .feature-card{
     background-color: #250D44;
-    border-radius:20px;
+    border-radius:40px;
 }
 .feature-card iframe{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 .card-text-container{
     text-align: left;
@@ -263,7 +263,52 @@ hr{
     color: var(--green-color);
 }
 
+/* host section style */
 
+.host-section{
+    margin-top: 7.5rem;
+    text-align: center;
+}
+.host-contant{
+    background-color: rgba(53, 17, 101, 0.4);
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+    display: flex;
+    gap:24px;
+    border-radius: 40px;
+    align-items: center;
+}
+.host-text{
+    color: #ffffff;
+    text-align: left;
+}
+.host-text h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.social-icon{
+    margin-top: 1rem;
+    display: flex;
+    gap:8px;
+}
+.social-icon div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #533C72;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .social-icon div img{
+    position: absolute;
+    left: 32%;
+    top: 23%;
+} */
+
+
+/* footer section style */
 /* Responsive for small device */
 @media screen and (max-width:576px) {
     .navbar {
@@ -285,7 +330,7 @@ hr{
     .podcast-img{
         width:35%;
     }
-    .banner-text {
+    .banner-text, .host-contant  {
         margin-top: 1.5rem;
     }
     .banner-text h1 {
@@ -321,6 +366,25 @@ hr{
         flex-direction: column;
         margin-top:2.5rem;
         gap: 1rem;
-}
-     
+    }
+    .host-section {
+        margin-top: 3.75rem;
+    }
+    .host-contant {
+        flex-direction: column;
+    }
+    .host-image{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .host-text{
+        text-align: center;
+    }
+    .host-text h3{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .social-icon{
+        justify-content: center;
+    }
 }
