@@ -32,6 +32,12 @@
     color: #ffffff;
     line-height: 1.5rem;
 }
+.card-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #ffffff;
+}
 .primary-btn{
     padding: 0.75rem 1rem;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
@@ -148,7 +154,7 @@
 .about-section{
     /* border: 2px solid yellow; */
     background-color: #1A0B2E;
-    padding:3.125rem 0 7.5rem;
+    padding:3.125rem 0rem 7.5rem;
 }
 .about-text-content{
     max-width: 75rem;
@@ -204,11 +210,7 @@ hr{
     background: rgba(53, 17, 101, 0.4);
     color:#ffffff
 }
-.choose-card h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 1rem 0;
-}
+
 
 #audio{
     grid-area: audio;
@@ -227,6 +229,41 @@ hr{
 #resource{
     grid-area: resource;
 }
+/* feature and host section style */
+.feature-and-host{
+    border: 2px solid yellow;
+    background-color: var(--bg-color);
+    padding: 7.5rem 12.5rem;
+}
+.feature-episodes{
+    text-align:center;
+}
+.feature-card-container{
+    margin-top: 2.5rem;
+    display: flex;
+    gap:30px;
+}
+.feature-card{
+    background-color: #250D44;
+    border-radius:20px;
+}
+.feature-card iframe{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-text-container{
+    text-align: left;
+    margin: 1.5rem;
+}
+.time{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-top: 12px;
+    color: var(--green-color);
+}
+
+
 /* Responsive for small device */
 @media screen and (max-width:576px) {
     .navbar {
@@ -238,7 +275,7 @@ hr{
     .hamburger-menu{
         display: block;
     }
-    .banner, .about-section, .choose-section{
+    .banner, .about-section, .choose-section, .feature-and-host{
         padding: 40px 20px;
     }
     .podcast {
@@ -264,18 +301,26 @@ hr{
     .heading2{
         font-size: 2rem;
     }
+    .card-heading{
+        font-size: 1.375rem;
+    }
     .about-card-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
     .choose-card-container {
-    grid-template-areas:
-        "audio"
-        "mobile"
-        "community"
-        "interview" 
-        "resource";
-    grid-gap: 1rem;
+        grid-template-areas:
+            "audio"
+            "mobile"
+            "community"
+            "interview" 
+            "resource";
+        grid-gap: 1rem;
+    }
+    .feature-card-container {
+        flex-direction: column;
+        margin-top:2.5rem;
+        gap: 1rem;
 }
      
 }
