@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -17,10 +18,7 @@
 
 .section-width{
     max-width: 1600px;
-<<<<<<< HEAD
     margin: 0 auto;
-=======
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
     /* border: 1px solid red; */
 }
 .heading2{
@@ -30,14 +28,9 @@
 }
 .text{
     font-size: 1rem;
-<<<<<<< HEAD
     font-weight: normal;
     color: #ffffff;
     line-height: 1.5rem;
-=======
-    font-weight: 500;
-    color: #ffffff;
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 }
 .primary-btn{
     padding: 0.75rem 1rem;
@@ -56,10 +49,7 @@
     align-items: center;
     background-color: var(--bg-color);
     border-bottom: 1px solid rgba(65, 37, 103, 1);
-<<<<<<< HEAD
     padding: 20px;
-=======
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 }
 
 .wave {
@@ -82,11 +72,8 @@
 }
 .hamburger-menu{
     display: none;
-<<<<<<< HEAD
     color:#ffffff;
     font-size: 2rem;
-=======
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 }
 /* Banner style section */
 .banner{
@@ -118,18 +105,9 @@
     position: relative;
 
 }
-<<<<<<< HEAD
 .podcast-img{
     /* width: 116px; */
 }
-=======
-/* .podcast-img{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 
 .badge{
     width: 75px;
@@ -191,15 +169,10 @@ hr{
     max-width: 75rem;
     /* border: 1px solid white; */
     margin: 5rem auto 0px;
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
     justify-items: center;
-=======
-    display: flex;
-    justify-content: space-between;
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 }
 .about-card-container .card h1{
     font-size: 3rem;
@@ -217,7 +190,6 @@ hr{
 .choose-title{
     text-align: center;
     margin-bottom: 2.5rem;
-<<<<<<< HEAD
 }
 
 .choose-card-container{
@@ -300,6 +272,4 @@ hr{
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
-=======
->>>>>>> 248ed9fb3f5fba2547704cc49c2928375ffc1efb
 }
