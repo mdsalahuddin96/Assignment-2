@@ -183,7 +183,6 @@ hr{
 
 /* choose section styles */
 .choose-section{
-    border: 2px solid gainsboro;
     padding: 7.5rem 12.5rem;
     background-color: var(--bg-color2);
 }
@@ -193,7 +192,6 @@ hr{
 }
 
 .choose-card-container{
-    border: 1px solid white;
     display: grid;
     grid-template-areas: "audio mobile mobile"
                         "audio community community"
@@ -217,7 +215,6 @@ hr{
     display: flex;
     align-items: center;
 }
-
 #mobile{
     grid-area: mobile;
 }
@@ -241,7 +238,7 @@ hr{
     .hamburger-menu{
         display: block;
     }
-    .banner, .about-section {
+    .banner, .about-section, .choose-section{
         padding: 40px 20px;
     }
     .podcast {
@@ -268,7 +265,17 @@ hr{
         font-size: 2rem;
     }
     .about-card-container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    .choose-card-container {
+    grid-template-areas:
+        "audio"
+        "mobile"
+        "community"
+        "interview" 
+        "resource";
+    grid-gap: 1rem;
 }
+     
 }
