@@ -161,7 +161,7 @@
     border-radius: 10000px;
     background-color: transparent;
     margin-left: 0.5rem;
-    animation: blinkshadow 1s linear infinite alternate-reverse;
+    animation: blinkshadow 1.25s linear infinite alternate-reverse;
 }
 
 /* About section sytles */
@@ -349,6 +349,7 @@ footer{
     font-size: 1rem;
     font-weight: 500;
 }
+
 /* Responsive for small device */
 @media screen and (max-width:576px) {
     .navbar {
@@ -433,4 +434,27 @@ footer{
        align-items: center;
        gap:1rem;
     }
+}
+
+/* Responsive for medium device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner {
+        background-size: cover;
+        padding:4rem;
+    }
+    .podcast {
+        height: 18.88rem;
+        width: 18.88rem;
+    }
+    .choose-card-container {
+        grid-template-areas:
+        "audio     mobile      " 
+        " community community" 
+        "interview resource ";
+        grid-gap: 15px;
+    }
+    .feature-card-container {
+        flex-direction: column;
+}
 }
