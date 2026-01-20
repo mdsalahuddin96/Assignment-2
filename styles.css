@@ -53,6 +53,15 @@
     cursor: pointer;
     box-shadow: 0px 0px 27px rgba(251, 9, 180, 1);
 }
+
+@keyframes blinkshadow {
+            to{
+                box-shadow: 0px 0px 27px rgb(9, 180, 52);
+                background-color: var(--green-color);
+                color: #ffffff; 
+            }
+            
+        }
 /* main style */
 /* Header section style */
 .navbar{
@@ -117,9 +126,7 @@
     position: relative;
 
 }
-.podcast-img{
-    /* width: 116px; */
-}
+
 
 .badge{
     width: 75px;
@@ -127,7 +134,7 @@
     background-color: var(--green-color);
     padding: 8px 16px;
     border-radius: 1000px;
-    box-shadow: 0px 0px 27px rgba(0, 255, 136, 0.5);
+    box-shadow: 0px 0px 30px rgb(1, 39, 21);
     position: absolute;
     right: 0;
     top: 25px;;
@@ -154,6 +161,7 @@
     border-radius: 10000px;
     background-color: transparent;
     margin-left: 0.5rem;
+    animation: blinkshadow 1s linear infinite alternate-reverse;
 }
 
 /* About section sytles */
